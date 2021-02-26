@@ -147,7 +147,7 @@
             _load = function() {
                 var $inner = $e.find('div.jscroll-inner').first(),
                     data = $e.data('jscroll');
-
+                data.nextHref = $(_options.nextSelector).attr('href');
                 data.waiting = true;
                 $inner.append('<div class="jscroll-added" />')
                     .children('.jscroll-added').last()
